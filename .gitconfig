@@ -1,0 +1,16 @@
+# Example ~/.gitconfig. Run `git config -l` to see what is configured
+[user]
+    name = {something}
+    email = {something else}
+
+[pull]
+    # This means pulling will fail if a fast-forward merge cannot be done.
+    # Try `git checkout -b {temp_branch_name}` to save your working commit.
+    # Then `git fetch origin {branch}` and `git checkout -B main origin/main`
+    # to reset your local main branch checkout. Finally, run `git checkout {temp}`
+    # and `git rebase main` to work your way through the merge conflict.
+    # `git checkout -B main {temp}` and `git push origin main` should then
+    # push the result
+    ff = only
+
+# `git log --oneline --graph --all` is great btw
