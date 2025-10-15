@@ -1,2 +1,9 @@
-# macbook pro, m1 max. minted in 2025-06
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHBfVbS1hIMLSqOXKSLDRGguib/MMDAQSRwBv6o5kiNS trevor@Trevors-MacBook-Pro.local
+# each line should be from `cat {~/.ssh/pub key file}`
+
+# which is slightly more detailed than `curl https://github.com/{user}.keys`
+# because it includes the {username}@{computer name}. You can check
+# https://github.com/settings/keys to see the name you gave the key. It should
+# match `ssh-add -l`.
+
+# I don't know of anything that uses `ssh-keygen -B -f {~/.ssh/pub key file}`
+# i.e. the bubblebabble digest, but I wish more did.
