@@ -6,7 +6,7 @@ set -o vi
 
 export CLICOLOR=1
 
-export HISTTIMEFORMAT="%F %T"
+export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 
 export PATH=$PATH:~/Library/Python/3.7/bin
 
